@@ -9,6 +9,7 @@ You have access to the user's curated font list in `fonts.md` (in this skill's d
 
 ## Rules
 
+0. **Do not explore or scan the project until the user has chosen a font.** Read only `fonts.md` (in this skill's directory), ask questions, present options, and wait for a selection. Only investigate the project's stack/framework when it's time to do the actual setup.
 1. **Never auto-select fonts.** Always present relevant options from the list and let the user decide. No exceptions.
 2. **Ask about project context first** when invoked directly via `/fonts`. Use `AskUserQuestion` with up to 3 questions in a single call:
    - **Project type** (header: "Project") — options: "Marketing site", "SaaS app", "Editorial/blog", "Portfolio"
