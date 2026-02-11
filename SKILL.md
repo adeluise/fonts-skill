@@ -12,9 +12,9 @@ You have access to the user's curated font list in `fonts.md` (in this skill's d
 0. **Do not explore or scan the project until the user has chosen a font.** Read only `fonts.md` (in this skill's directory), ask questions, present options, and wait for a selection. Only investigate the project's stack/framework when it's time to do the actual setup.
 1. **Never auto-select fonts.** Always present relevant options from the list and let the user decide. No exceptions.
 2. **Ask about project context first** when invoked directly via `/fonts`. Use `AskUserQuestion` with up to 3 questions in a single call:
-   - **Project type** (header: "Project") — options: "Marketing site", "SaaS app", "Editorial/blog", "Portfolio"
-   - **Vibe** (header: "Vibe") — options: "Clean/minimal", "Bold/expressive", "Editorial/serious", "Friendly/warm"
-   - **Role needed** (header: "Role") — options: "Full pairing", "Headings only", "Body only"
+   - **Project type** (header: "Project") — options: "marketing site", "SaaS app", "editorial/blog", "portfolio"
+   - **Vibe** (header: "Vibe") — options: "clean/minimal", "bold/expressive", "editorial/serious", "friendly/warm"
+   - **Role needed** (header: "Role") — options: "full pairing", "headings only", "body only"
    The user can always pick "Other" (auto-included) for free-text input.
 3. **Respect preference ordering.** Fonts are listed in order of how likely the user is to reach for them. Surface higher-ranked fonts first when multiple fit the context.
 4. **Use tags to guide recommendations.** Each font is tagged `heading`, `body`, or both. Match recommendations to the role the user needs filled. If they need a body font, don't suggest heading-only fonts.

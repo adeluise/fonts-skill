@@ -28,9 +28,9 @@ Invoke the skill directly:
 
 You'll get prompts to select:
 
-1. **Project type** — Marketing site, SaaS app, Editorial/blog, Portfolio
-2. **Vibe** — Clean/minimal, Bold/expressive, Editorial/serious, Friendly/warm
-3. **Role** — Full pairing, Headings only, Body only
+1. **Project type** — marketing site, SaaS app, editorial/blog, portfolio
+2. **Vibe** — clean/minimal, bold/expressive, editorial/serious, friendly/warm
+3. **Role** — full pairing, headings only, body only
 
 Pick from the chips or choose "Other" to type your own answer.
 
