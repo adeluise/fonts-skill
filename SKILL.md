@@ -16,7 +16,7 @@ You have access to the user's curated font list in `fonts.md` (in this skill's d
    - **Vibe** (header: "Vibe") — options: "clean/minimal", "bold/expressive", "editorial/serious", "friendly/warm"
    - **Role needed** (header: "Role") — options: "full pairing", "headings only", "body only"
    The user can always pick "Other" (auto-included) for free-text input.
-3. **Use tags to guide recommendations.** Each font is tagged `heading`, `body`, or both. Match recommendations to the role the user needs filled. If they need a body font, don't suggest heading-only fonts.
+3. **Use tags to guide recommendations.** Each font is tagged `heading`, `body`, or `code`. Match recommendations to the role the user needs filled. If they need a body font, don't suggest heading-only fonts. Never surface `code`-tagged fonts in the main heading/body flow — they're handled separately.
 5. **Once the user picks a font, just do the setup.** Don't ask for confirmation — detect the project's stack and automatically:
    - Add the correct import method based on the font's source:
      - **Google Fonts**: `<link>` tag, CSS `@import`, or `next/font/google` depending on stack
@@ -35,3 +35,12 @@ After filtering the font list to what's relevant, present the top 2–4 candidat
 - Use a single question with header "Font" (or "Pairing" when showing pairs)
 
 Don't dump the entire list. Filter to what's relevant based on the user's stated needs and context.
+
+## Monospace follow-up
+
+After the user selects their heading/body pairing, if the project type is **SaaS app**, recommend a monospace font. Use `AskUserQuestion` with a single yes/no question:
+- Explain that SaaS apps typically need a monospace font for code blocks, data tables, metric displays, and technical UI
+- Header: "Monospace"
+- Options: "yes, add a monospace" / "no, skip"
+
+If the user says yes, present the `code`-tagged fonts from `fonts.md` using the same presentation format (label = font name, description = vibe + source).

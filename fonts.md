@@ -22,3 +22,10 @@ Grouped by classification.
 | Uncut Sans | Uncut | https://uncut.wtf/sans-serif/uncut-sans/ | Wide-spaced, understated | `body` |
 | Bricolage Grotesque | Google Fonts | https://fonts.google.com/specimen/Bricolage+Grotesque | Irregular, contrasting spacing, organic and human while still retaining structure | `heading` |
 | Apfel Grotezk | Collletttivo | https://www.collletttivo.it/typefaces/apfel-grotezk | Rounded, friendly, bubbly and casual but not quite childish | `heading` |
+
+## Mono
+
+| Font | Source | URL | Vibe | Tags |
+|------|--------|-----|------|------|
+| Geist Mono | Google Fonts | https://fonts.google.com/specimen/Geist+Mono | Systematic, built to disappear into UI, designed to pair with Geist | `code` |
+| Necto Mono | Uncut | https://uncut.wtf/monospace/necto-mono/ | Quiet, neutral without utility, reads as text rather than code or data | `code` |

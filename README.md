@@ -36,6 +36,8 @@ Pick from the chips or choose "Other" to type your own answer.
 
 The skill filters down to 2–4 font recommendations presented as selectable options. Once you pick, it detects your stack and sets everything up automatically — no confirmation step.
 
+For **SaaS apps**, the skill will also recommend a monospace font for code blocks, data tables, and technical UI after you've chosen your main pairing.
+
 You can also trigger it naturally in conversation:
 
 ```
@@ -44,7 +46,7 @@ I need a font pairing for a marketing landing page
 
 ## What's in the list
 
-11 hand-picked typefaces:
+13 hand-picked typefaces:
 
 | Font | Classification | Source | Tags |
 |------|---------------|--------|------|
@@ -52,6 +54,8 @@ I need a font pairing for a marketing landing page
 | Bricolage Grotesque | Sans | Google Fonts | heading |
 | Epilogue | Sans | Google Fonts | heading |
 | Geist | Sans | Google Fonts | heading, body |
+| Geist Mono | Mono | Google Fonts | code |
+| Necto Mono | Mono | Uncut | code |
 | Newsreader | Serif | Google Fonts | heading, body |
 | Nyght Serif | Serif | Uncut | heading |
 | Ortica | Serif | Uncut | heading |
@@ -62,4 +66,4 @@ I need a font pairing for a marketing landing page
 
 ## Customizing
 
-Edit `fonts.md` to add, remove, or reorder fonts. The skill reads this file every time it's invoked — no restart needed. Follow the existing table format and tag fonts with `heading`, `body`, or both.
+Edit `fonts.md` to add, remove, or reorder fonts. The skill reads this file every time it's invoked — no restart needed. Follow the existing table format and tag fonts with `heading`, `body`, `code`, or a combination.
