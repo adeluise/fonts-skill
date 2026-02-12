@@ -8,7 +8,8 @@ Grouped by classification.
 |------|--------|-----|------|------|
 | Newsreader | Google Fonts | https://fonts.google.com/specimen/Newsreader | Editorial, authoritative and serious, NYT or WaPo vibe | `heading` `body` |
 | Zodiak | Fontshare | https://www.fontshare.com/?q=Zodiak | Refined, lifestyle-oriented without wading too far into unserious or friendly | `heading` `body` |
-| Prociono | Google Fonts | https://fonts.google.com/specimen/Prociono | Classical, Roman, distinct but may be hard to pair | `heading` |
+| Spectral | Google Fonts | https://fonts.google.com/specimen/Spectral | Purpose-built for reading on screens, quiet, civic | `heading` `body` |
+| Ortica | Uncut | https://uncut.wtf/serif/ortica/ | Calligraphic yet angular, oversized punctuation marks, Gothic manuscript without nostalgia | `heading` |
 | Nyght Serif | Uncut | https://uncut.wtf/serif/nyght-serif/ | Tight-spaced, modern vibe with a nod to the traditional, sharp | `heading` |
 
 ## Sans
