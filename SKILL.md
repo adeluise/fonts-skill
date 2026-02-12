@@ -16,8 +16,7 @@ You have access to the user's curated font list in `fonts.md` (in this skill's d
    - **Vibe** (header: "Vibe") — options: "clean/minimal", "bold/expressive", "editorial/serious", "friendly/warm"
    - **Role needed** (header: "Role") — options: "full pairing", "headings only", "body only"
    The user can always pick "Other" (auto-included) for free-text input.
-3. **Respect preference ordering.** Fonts are listed in order of how likely the user is to reach for them. Surface higher-ranked fonts first when multiple fit the context.
-4. **Use tags to guide recommendations.** Each font is tagged `heading`, `body`, or both. Match recommendations to the role the user needs filled. If they need a body font, don't suggest heading-only fonts.
+3. **Use tags to guide recommendations.** Each font is tagged `heading`, `body`, or both. Match recommendations to the role the user needs filled. If they need a body font, don't suggest heading-only fonts.
 5. **Once the user picks a font, just do the setup.** Don't ask for confirmation — detect the project's stack and automatically:
    - Add the correct import method based on the font's source:
      - **Google Fonts**: `<link>` tag, CSS `@import`, or `next/font/google` depending on stack
