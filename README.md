@@ -44,20 +44,21 @@ I need a font pairing for a marketing landing page
 
 ## What's in the list
 
-10 hand-picked typefaces:
+11 hand-picked typefaces:
 
 | Font | Classification | Source | Tags |
 |------|---------------|--------|------|
-| Newsreader | Serif | Google Fonts | heading, body |
-| Nyght Serif | Serif | Uncut | heading |
-| Zodiak | Serif | Fontshare | heading, body |
-| Prociono | Serif | Google Fonts | heading |
-| Satoshi | Sans | Fontshare | heading, body |
-| Geist | Sans | Google Fonts | heading, body |
+| Apfel Grotezk | Sans | Collletttivo | heading |
 | Bricolage Grotesque | Sans | Google Fonts | heading |
 | Epilogue | Sans | Google Fonts | heading |
+| Geist | Sans | Google Fonts | heading, body |
+| Newsreader | Serif | Google Fonts | heading, body |
+| Nyght Serif | Serif | Uncut | heading |
+| Ortica | Serif | Uncut | heading |
+| Satoshi | Sans | Fontshare | heading, body |
+| Spectral | Serif | Google Fonts | heading, body |
 | Uncut Sans | Sans | Uncut | body |
-| Apfel Grotezk | Sans | Collletttivo | heading |
+| Zodiak | Serif | Fontshare | heading, body |
 
 ## Customizing
 
