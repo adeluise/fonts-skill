@@ -36,6 +36,18 @@ Always include these fallbacks in `font-family` declarations. No other fallbacks
 
 For example, a sans setup should produce: `font-family: "Geist", system-ui, "Helvetica Neue", sans-serif;`
 
+## Variable fonts
+
+Each font in `fonts.md` has a `Variable` column. Always prefer the variable version when available — don't ask the user, just use it. Variable is strictly better: smaller total payload, one file, more flexibility.
+
+When a font is variable:
+- **Google Fonts**: use range syntax in the URL (`wght@100..900`), not individual weights (`wght@400;700`)
+- **Fontshare / self-hosted**: use a single variable `.woff2` file with `font-weight: 100 900` (range) in the `@font-face` block
+- **`next/font`**: omit the `weight` array — `next/font` automatically pulls the variable file when no explicit weights are specified
+- **CSS**: use standard properties (`font-weight`, `font-stretch`) for weight and width axes. Do not use `font-variation-settings` unless the font has a custom axis with no CSS property mapping.
+
+When a font is static-only, specify explicit weights in the import and `@font-face` declarations as usual.
+
 ## Presentation
 
 After filtering the font list to what's relevant, present the top 2–4 candidates using `AskUserQuestion`:
