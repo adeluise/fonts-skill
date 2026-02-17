@@ -14,9 +14,9 @@ You have access to the user's curated font list in `fonts.md` (in this skill's d
 2. **Ask about project context first** when invoked directly via `/fonts`. Use `AskUserQuestion` with up to 3 questions in a single call:
    - **Project type** (header: "Project") — options: "marketing site", "SaaS app", "editorial/blog", "portfolio"
    - **Vibe** (header: "Vibe") — options: "clean/minimal", "bold/expressive", "editorial/serious", "friendly/warm"
-   - **Role needed** (header: "Role") — options: "full pairing", "headings only", "body only"
+   - **Hierarchy** (header: "Hierarchy") — options: "heading + body", "heading only", "body only" (no descriptions needed, labels are self-explanatory)
    The user can always pick "Other" (auto-included) for free-text input.
-3. **Use tags to guide recommendations.** Each font is tagged `heading`, `body`, or `code`. Match recommendations to the role the user needs filled. If they need a body font, don't suggest heading-only fonts. Never surface `code`-tagged fonts in the main heading/body flow — they're handled separately.
+3. **Use tags to guide recommendations.** Each font is tagged `heading`, `body`, or `code`. Match recommendations to the hierarchy level the user needs filled. If they need a body font, don't suggest heading-only fonts. Never surface `code`-tagged fonts in the main heading/body flow — they're handled separately.
 5. **Once the user picks a font, just do the setup.** Don't ask for confirmation — detect the project's stack and automatically:
    - Add the correct import method based on the font's source:
      - **Google Fonts**: `<link>` tag, CSS `@import`, or `next/font/google` depending on stack
