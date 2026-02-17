@@ -22,9 +22,19 @@ You have access to the user's curated font list in `fonts.md` (in this skill's d
      - **Google Fonts**: `<link>` tag, CSS `@import`, or `next/font/google` depending on stack
      - **Fontshare**: CSS `@import` from their CDN, or provide download link for self-hosting
      - **Uncut / Collletttivo**: Provide the download URL and set up `@font-face` declarations for self-hosting
-   - Set up CSS custom properties or `font-family` declarations
+   - Set up CSS custom properties or `font-family` declarations with the correct fallback stack (see below)
    - Handle framework specifics (e.g., `next/font` for Next.js, global CSS for Vite, Tailwind config, etc.)
    - For non-Google fonts that require manual download, include the download link prominently
+
+## Fallback stacks
+
+Always include these fallbacks in `font-family` declarations. No other fallbacks — these are the stacks.
+
+- **Sans:** `system-ui, "Helvetica Neue", sans-serif`
+- **Serif:** `Charter, "Bitstream Charter", Georgia, serif`
+- **Mono:** `ui-monospace, "SF Mono", monospace`
+
+For example, a sans setup should produce: `font-family: "Geist", system-ui, "Helvetica Neue", sans-serif;`
 
 ## Presentation
 
